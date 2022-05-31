@@ -16,5 +16,5 @@ parent(алина,света).
 parent(сергей,алина).
 parent(кристина,вова).
 
-sister(X,Y):-woman(X),parent(Z,X),parent(Z,Y).
+sister(X,Y):-woman(X),parent(Z,X),parent(Z,Y),X\=Y.
 sister(X):-woman(Y),parent(Z,X),parent(Z,Y),write(Y).
